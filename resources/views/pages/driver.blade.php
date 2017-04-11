@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}">
-  @include('layouts.head')
+  @include('pages._head')
   <body class="b-index-page fixed-buttons lang-ru">
     <div class="b-container">
-      @include('layouts.left-sidebar')
-      @include('layouts.driver-screen')
+      @include('pages._left-sidebar')
+      @include('layouts.driver.main-screen')
     </div>
-    <div class="b-modal" data-id="offer-modal">
-      <div class="m-body"></div>
-    </div>
-    <div class="b-modal" data-id="tariff-modal">
-      <div class="m-body"></div>
-    </div>
-    <div class="b-modal" data-id="reglament">
-      <div class="m-body"></div>
-    </div>
-    <div class="b-modal" data-id="video-lessons">
-      <div class="m-body"></div>
-    </div>
+    <script src="/js/app.js"></script>
   </body>
 </html>

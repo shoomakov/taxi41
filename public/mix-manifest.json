@@ -1,4 +1,7 @@
 {
-  "/mix.js": "/mix.js",
-  "/css/all.css": "/css/all.css"
+  "/js/app.js": "/js/app.js",
+  "/css/app.css": "/css/app.css",
+  "/js/offerta.js": "/js/offerta.js",
+  "/css/all.css": "/css/all.css",
+  "/css/driver.css": "/css/driver.css"
 }

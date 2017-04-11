@@ -1,38 +1,67 @@
 <div class="b-main">
   <div class="b-header">
-    <div id="location-drop-down">
-      <ul>
-        <li>
-          <a class="city-list-button js-modal-open" href="#" data-id="city-choose">
-            {{ config('app.city') }}
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="b-phones-changed">
-      <a class="m-phone" href="#">{{ config('app.phone') }}</a>
-    </div>
+    @include('partials.city')
+    @include('partials.phone')
   </div>
   <div id="frame-order" class="b-order-block"></div>
+
+  <!-- template for the modal component -->
+  {{-- <script type="text/x-template" id="modal-template">
+    <transition name="modal">
+      <div class="modal-mask">
+        <div class="modal-wrapper">
+          <div class="modal-container">
+
+            <div class="modal-header">
+              <slot name="header">
+                default header
+              </slot>
+            </div>
+
+            <div class="modal-body">
+              <slot name="body">
+                default body
+              </slot>
+            </div>
+
+            <div class="modal-footer">
+              <slot name="footer">
+                default footer
+                <button class="modal-default-button" @click="$emit('close')">
+                  OK
+                </button>
+              </slot>
+            </div>
+          </div>
+        </div>
+      </div>
+    </transition>
+  </script>
+  <div id="app">
+    <button id="show-modal" @click="showModal = true">Show Modal</button>
+    <!-- use the modal component, pass in the prop -->
+    <modal v-if="showModal" @close="showModal = false">
+      <!--
+        you can use custom content here to overwrite
+        default content
+      -->
+      <h3 slot="header">custom header</h3>
+    </modal>
+  </div> --}}
 
   <div class="m-disclaimer">
     Сервис заказа такси "{{ config('app.name') }}" не оказывает услуг по перевозке легковым такси,
     заказы передаются исполнителям.
-    (<a
-      class="js-modal-open"
-      href="#"
-      data-id="offer-modal"
-      data-url="#">
-      Публичная оферта
-    </a>)
+
     <iframe
       src="{{ config('app.iframe') }}"
       height="100%"
       style="min-height: 1060px; width: 100%;">
     </iframe>
+
   </div>
 
-  <div class="b-app-download">
+  <div id="home-app-download" class="b-app-download animated slideInRight">
     <div class="m-call">Скачай приложение</div>
     <div class="m-name">«{{ config('app.name') }}: заказ такси»</div>
     <ul>

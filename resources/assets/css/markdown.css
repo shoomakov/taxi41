@@ -1,0 +1,20 @@
+.markdown-content h1,h2,h3,h4 {
+  font-size:22px;
+  padding-top: 18px;
+}
+
+.markdown-content > p,blockquote {
+  font-size: 14px;
+}
+
+.markdown-content {
+  font-size: 20px;
+}
+
+.markdown-content hr {
+  border: none;
+  color: #F7D802;
+  background-color: #F7D802;
+  height: 2px;
+  margin: 9px 0 9px 0;
+}

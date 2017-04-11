@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dc8bd059212562fb1ff258c4fa3c9ad6",
+    "content-hash": "3174e3cab223d2ba103a100a3808f2ff",
     "packages": [
+        {
+            "name": "andreasindal/laravel-markdown",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreasindal/laravel-markdown.git",
+                "reference": "9b71f768e2327806a6ef2c7ecb091138702b9f2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreasindal/laravel-markdown/zipball/9b71f768e2327806a6ef2c7ecb091138702b9f2e",
+                "reference": "9b71f768e2327806a6ef2c7ecb091138702b9f2e",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "^1.6",
+                "illuminate/support": "^5.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Indal\\Markdown\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Indal",
+                    "email": "andreas@rocketship.se"
+                }
+            ],
+            "description": "Simple Blade directive for markdown parsing.",
+            "time": "2017-01-18T22:14:48+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -486,6 +529,60 @@
                 "psysh"
             ],
             "time": "2016-12-30T18:13:17+00:00"
+        },
+        {
+            "name": "laravelcollective/html",
+            "version": "v5.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "7570f25d58a00fd6909c0563808590f9cdb14d47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/7570f25d58a00fd6909c0563808590f9cdb14d47",
+                "reference": "7570f25d58a00fd6909c0563808590f9cdb14d47",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.4.*",
+                "illuminate/routing": "5.4.*",
+                "illuminate/session": "5.4.*",
+                "illuminate/support": "5.4.*",
+                "illuminate/view": "5.4.*",
+                "php": ">=5.6.4"
+            },
+            "require-dev": {
+                "illuminate/database": "5.4.*",
+                "mockery/mockery": "~0.9.4",
+                "phpunit/phpunit": "~5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Collective\\Html\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylorotwell@gmail.com"
+                },
+                {
+                    "name": "Adam Engebretson",
+                    "email": "adam@laravelcollective.com"
+                }
+            ],
+            "description": "HTML and Form Builders for the Laravel Framework",
+            "homepage": "http://laravelcollective.com",
+            "time": "2017-01-26T19:27:05+00:00"
         },
         {
             "name": "league/flysystem",

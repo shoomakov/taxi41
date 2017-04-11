@@ -11,8 +11,10 @@ const { mix } = require('laravel-mix');
  |
  */
 
-// mix.js('resources/assets/js/app.js', 'public/js')
-//    .sass('resources/assets/sass/app.scss', 'public/css');
+mix.js('resources/assets/js/app.js', 'public/js')
+   .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.js('resources/assets/js/offerta.js', 'public/js');
 
 const cssdir = 'resources/assets/css';
 
@@ -22,9 +24,27 @@ mix.styles(
     `${cssdir}/font-awesome.min.css`,
     `${cssdir}/ui.css`,
     `${cssdir}/bootstrap.custom.css`,
+    `${cssdir}/home.b.main.css`,
     `${cssdir}/custom.all.css`,
+    `${cssdir}/modal.css`,
+    `${cssdir}/markdown.css`
   ], 'public/css/all.css'
 )
+
+// home
+mix.styles(
+  [
+    `${cssdir}/font-awesome.min.css`,
+    `${cssdir}/ui.css`,
+    `${cssdir}/bootstrap.custom.css`,
+    `${cssdir}/driver.b.main.css`,
+    `${cssdir}/custom.all.css`,
+    `${cssdir}/modal.css`,
+    `${cssdir}/markdown.css`
+  ], 'public/css/driver.css'
+)
+
+// offerta
 
 // driver
 // mix.styles(
