@@ -53,11 +53,7 @@
     Сервис заказа такси "{{ config('app.name') }}" не оказывает услуг по перевозке легковым такси,
     заказы передаются исполнителям.
 
-    <iframe
-      src="{{ config('app.iframe') }}"
-      height="100%"
-      style="min-height: 1060px; width: 100%;">
-    </iframe>
+    <div id="taxsee-form" style="margin: 0 auto"></div>
 
   </div>
 
