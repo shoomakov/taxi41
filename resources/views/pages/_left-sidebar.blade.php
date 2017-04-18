@@ -37,7 +37,7 @@
       {{-- <li><a href="http://taximaxim.ru/blog/">Блог</a></li> --}}
       <li class="{{ $about }}"><a href="/about">О компании</a></li>
       <li class="{{ $contacts }}"><a href="/contacts">Контакты</a></li>
-      <li class="{{ $offerta }}"><a href="/offerta">Публичная офферта</a></li>
+      <li class="{{ $offerta }}"><a href="/offerta">Публичная оферта</a></li>
     </ul>
     <ul class="b-cabinet-enter-links">
       {{-- <li><a href="http://client.taximaxim.com/ru" target="_blank">Кабинет клиента <i class="maxim-icon tm-arrow"></i></a></li> --}}

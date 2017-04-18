@@ -13,14 +13,12 @@
 use App\Http\Controllers\ContactUSController;
 use Illuminate\Http\Request;
 Route::get('test', function() {
-
-    $test = new ContactUSController;
-
-    dd($test->contactUSPost($request));
-
-    // Log::info($test); // will show in your log
-
-    // var_dump($test->middleware);
+  DB::connection()->enableQueryLog();
+  $contactus = DB::select('select migration from migrations');
+  dd($contactus);
+  // foreach ($contactus as $key => $value) {
+  //   echo $value;
+  // }
 
 });
 
@@ -80,7 +78,10 @@ Route::get('/', function () {
       'about' => '',
 
       // style
-      'style' => 'all.css'
+      'style' => 'all.css',
+
+      // city_description
+      'city' => file_get_contents('../resources/views/md/city.md')      
     ]
   );
 });
@@ -107,7 +108,10 @@ Route::get('/driver', function () {
       'about' => '',
 
       // style
-      'style' => 'driver.css'
+      'style' => 'driver.css',
+
+      // city_description
+      'city' => file_get_contents('../resources/views/md/city.md')
 
     ]
   );

@@ -8,7 +8,7 @@
         @include('pages._main-screen')
 
     </div>
-
+    <script src="/js/plugins.js" charset="utf-8"></script>
     <script type="text/javascript" src="/js/app.js"></script>
   </body>
 </html>

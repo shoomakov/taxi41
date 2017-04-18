@@ -27,11 +27,13 @@ mix.styles(
     `${cssdir}/home.b.main.css`,
     `${cssdir}/custom.all.css`,
     `${cssdir}/modal.css`,
-    `${cssdir}/markdown.css`
+    `${cssdir}/markdown.css`,
+    `node_modules/tippy.js/dist/tippy.css`,
+    `${cssdir}/tooltips.css`
   ], 'public/css/all.css'
 )
 
-// home
+// driver
 mix.styles(
   [
     `${cssdir}/font-awesome.min.css`,
@@ -40,9 +42,17 @@ mix.styles(
     `${cssdir}/driver.b.main.css`,
     `${cssdir}/custom.all.css`,
     `${cssdir}/modal.css`,
-    `${cssdir}/markdown.css`
+    `${cssdir}/markdown.css`,
+    `node_modules/tippy.js/dist/tippy.css`,
+    `${cssdir}/tooltips.css`
   ], 'public/css/driver.css'
 )
+
+mix.scripts(
+  [
+    'node_modules/tippy.js/dist/tippy.min.js'
+  ], 'public/js/plugins.js'
+);
 
 // offerta
 

@@ -1,0 +1,32 @@
+.tippy-tooltip[data-template-id="#city_description"] {
+  padding: 2rem;
+  font-size: 14px;
+  text-align: left;
+  padding: 40px 50px;
+  margin-left: 200px;
+}
+
+/*@media screen and (max-width:350px) {
+    .tippy-tooltip[data-template-id="#city_description"] {
+      padding: 2rem;
+      font-size: 14px;
+      text-align: left;
+      padding: 40px 50px;
+    }
+}*/
+
+@media screen and (max-width: 800px),
+screen and (max-device-width:800px) {
+    .tippy-tooltip[data-template-id="#city_description"] {
+      /* Your styling here. Example: */
+      padding: 2rem;
+      font-size: 14px;
+      text-align: left;
+      padding: 40px 50px;
+      margin-left: 0;
+    }
+}
+
+.button_description {
+  margin-top: 30px;
+}

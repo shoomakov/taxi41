@@ -7,16 +7,42 @@
 
 require('./bootstrap');
 require('animate.css');
+// require('tippy.js');
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+
+
 $('.m-phone').css('font-size', '30px');
 $('#driver_line').css('height', '30px');
 
-// $('#home-app-download')
+/******************************************************************************
+| Tooltip
+ *****************************************************************************/
+
+new Tippy('#city_block', {
+  html: '#city_description', // or document.querySelector('#my-template-id')
+  arrow: true,
+  animation: 'fade',
+  trigger: 'click',
+  theme: 'light'
+});
+
+$('#button_description').css('margin-top', '30px');
+// const toolTipStyles = {
+//   padding: '2rem',
+//   fontSize: '14px',
+//   textAlign: 'left',
+//   padding: '40px 50px',
+//   marginLeft: '0'
+// };
+//
+// if ($(window).width() < 800) {
+//   $("[data-template-id='#city_description']").css(toolTipStyles);
+// }
 
 $('#city_block').fadeOut();
 $('#city_block').fadeIn(10000);
