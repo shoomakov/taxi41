@@ -11,15 +11,12 @@
 1. Сгрупировать ```views/*/*.blade.php```
 2. Подключить контролер, записывающий данные в БД. Написать обработчик, который будет проверять данные в БД
 3. ```$.ajax``` вывести в функцию. Упростить условия. ```name_of_object```. Возможность вызывать переменную, имя которой - строка.
-4. Python Build, скрипт который убирает лишние классы для каждого роута.
-5. Скрипт для деплоя.
-6. Webpack. Minify CSS, JS [true or false].
 
 
 Контакт-форма:
 http://itsolutionstuff.com/post/laravel-53-create-bootstrap-contact-us-form-using-form-requestexample.html
 
-```
+```SQL
 CREATE TABLE `taxi41`.`contactus` (
   `name` VARCHAR(256) NOT NULL,
   `email` VARCHAR(256) NOT NULL,
