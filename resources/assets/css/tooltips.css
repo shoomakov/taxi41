@@ -30,3 +30,7 @@ screen and (max-device-width:800px) {
 .button_description {
   margin-top: 30px;
 }
+
+.tippy-tooltip-content p {
+  margin-bottom: 10px;
+}

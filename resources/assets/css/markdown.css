@@ -5,6 +5,14 @@
 
 .markdown-content > p,blockquote {
   font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.markdown-content > ul {
+  font-size: 14px;
+  margin-bottom: 12px;
+  margin-left: 20px;
+  list-style: square outside;
 }
 
 .markdown-content {
@@ -17,4 +25,22 @@
   background-color: #F7D802;
   height: 2px;
   margin: 9px 0 9px 0;
+}
+
+img[alt$=">"] {
+  float:right;
+  padding: 23px;
+}
+
+img[alt$="<"] {
+  float:left;
+  padding: 23px;
+}
+
+img[alt$="<>"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
 }

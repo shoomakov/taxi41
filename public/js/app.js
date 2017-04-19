@@ -11545,7 +11545,7 @@ __webpack_require__(6);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-$('.m-phone').css('font-size', '30px');
+// $('.m-phone').css('font-size', '30px');
 $('#driver_line').css('height', '30px');
 
 /******************************************************************************

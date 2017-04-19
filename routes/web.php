@@ -73,6 +73,7 @@ Route::get('/', function () {
       // menu
       'morder' => 'm-order s-active',
       'mdriver' => 'm-driver',
+      'morg' => 'm-franchise',
       'offerta' => '',
       'contacts' => '',
       'about' => '',
@@ -81,7 +82,7 @@ Route::get('/', function () {
       'style' => 'all.css',
 
       // city_description
-      'city' => file_get_contents('../resources/views/md/city.md')      
+      'city' => file_get_contents('../resources/views/md/city.md')
     ]
   );
 });
@@ -103,6 +104,38 @@ Route::get('/driver', function () {
       // menu
       'morder' => 'm-order',
       'mdriver' => 'm-driver s-active',
+      'morg' => 'm-franchise',
+      'offerta' => '',
+      'contacts' => '',
+      'about' => '',
+
+      // style
+      'style' => 'driver.css',
+
+      // city_description
+      'city' => file_get_contents('../resources/views/md/city.md')
+
+    ]
+  );
+});
+
+/*
+|-------------------------------------------------------------------------
+| Organizaciyam
+|-------------------------------------------------------------------------
+ */
+
+Route::get('/taksoparkam', function () {
+  return view(
+    'pages.org',
+    [
+      'title' => 'Для таксомоторных компаний | '.config('app.name'),
+      'description' => 'null',
+
+      // menu
+      'morder' => 'm-order',
+      'mdriver' => 'm-driver',
+      'morg' => 'm-franchise s-active',
       'offerta' => '',
       'contacts' => '',
       'about' => '',
@@ -135,6 +168,7 @@ Route::get('/offerta', function () {
       'morder' => 'm-order',
       'mdriver' => 'm-driver',
       'offerta' => 's-active',
+      'morg' => 'm-franchise',
       'contacts' => '',
       'about' => '',
 
@@ -164,6 +198,7 @@ Route::get('/contacts', function () {
       'morder' => 'm-order',
       'mdriver' => 'm-driver',
       'offerta' => '',
+      'morg' => 'm-franchise',
       'contacts' => 's-active',
       'about' => '',
 
@@ -191,6 +226,7 @@ Route::get('/about', function () {
       'morder' => 'm-order',
       'mdriver' => 'm-driver',
       'offerta' => '',
+      'morg' => 'm-franchise',
       'contacts' => '',
       'about' => 's-active',
 

@@ -7,7 +7,13 @@
       <div id="before_form">
         <div class="col-md-12">
           <h1 class="animated slideInUp">Зарабатывай с Taxi41</h1>
-          <p class="animated slideInUp">Заполните все поля формы, если вас заинтересовало предложение</p>
+          <p class="animated slideInUp">
+            Процесс выполнения заказов прост и автомотизирован.
+            Для сотрудничества необходим автомобиль в исправном состоянии,
+            водительский стаж от 3-х лет, знание города и смартфон.
+            Заполните анкету или приезжайте в офис, где менеджер поможет скачать
+            приложение и проинструктирует регламент работы. График работы определяете сами.
+          </p>
 
           <div id="success-message" class='alert alert-success'>
             Спасибо, в ближайшее время мы с вами свяжемся!
@@ -44,7 +50,7 @@
 
       <div id="message" class="form-group">
         {!! Form::label('Сообщение:') !!}
-        {!! Form::textarea('message', old('message'), ['class'=>'form-control', 'placeholder'=>'Введите сообщение']) !!}
+        {!! Form::textarea('message', old('message'), ['class'=>'form-control', 'placeholder'=>'Введите сообщение', 'rows'=>'7']) !!}
         <span id="error-message" class="text-danger">{{ $errors->first('message') }}</span>
       </div>
 

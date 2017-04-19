@@ -30,6 +30,13 @@
           Работа водителем
         </a>
       </li>
+
+      <li class="{{ $morg }}">
+        <a href="/taksoparkam">
+          <i class="maxim-icon tm-franchise"></i>
+          Таксопаркам
+        </a>
+      </li>
       {{-- <li class="m-vacancy"><a href="http://taximaxim.ru/vacancy/"><i class="maxim-icon tm-vacancy"></i> Вакансии</a></li> --}}
       <!-- <li class="m-franchise"><a href="http://taximaxim.ru/franchise/"><i class="maxim-icon tm-franchise"></i> Франшиза</a></li> -->
     </ul>

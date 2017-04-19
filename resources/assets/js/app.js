@@ -16,7 +16,7 @@ require('animate.css');
 
 
 
-$('.m-phone').css('font-size', '30px');
+// $('.m-phone').css('font-size', '30px');
 $('#driver_line').css('height', '30px');
 
 /******************************************************************************
