@@ -33,6 +33,22 @@ mix.styles(
   ], 'public/css/all.css'
 )
 
+// contacts
+mix.styles(
+  [
+    `${cssdir}/font-awesome.min.css`,
+    `${cssdir}/ui.css`,
+    `${cssdir}/bootstrap.custom.css`,
+    `${cssdir}/home.b.main.css`,
+    `${cssdir}/custom.all.css`,
+    `${cssdir}/modal.css`,
+    `${cssdir}/markdown.css`,
+    `node_modules/tippy.js/dist/tippy.css`,
+    `${cssdir}/tooltips.css`,
+    `${cssdir}/contacts.css`
+  ], 'public/css/contacts.css'
+)
+
 // driver
 mix.styles(
   [

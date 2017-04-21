@@ -1,6 +1,6 @@
 <div id="city_description" style="display: none;">
   @markdown
-    {{ $city }}
+    {{ config('custom.city') }}
   @endmarkdown
   <button id="button_description" class="btn btn-danger button_description" onclick="hideHtml()" type="button" name="button">Закрыть</button>
 </div>

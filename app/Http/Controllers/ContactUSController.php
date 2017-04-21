@@ -48,7 +48,7 @@ class ContactUSController extends Controller
             'themessage' => $get_message
           ],
           function($message) use ($get_name, $get_email, $get_message) {
-            $message->to('sergey@shoomakov.ru')->subject('Заявка от водителя!');
+            $message->to('info@taxi41.su')->subject('Заявка от водителя!');
           }
         );
 

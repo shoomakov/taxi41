@@ -7,16 +7,13 @@
 
 require('./bootstrap');
 require('animate.css');
-// require('tippy.js');
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-
-
-// $('.m-phone').css('font-size', '30px');
 $('#driver_line').css('height', '30px');
 
 /******************************************************************************
@@ -32,17 +29,6 @@ new Tippy('#city_block', {
 });
 
 $('#button_description').css('margin-top', '30px');
-// const toolTipStyles = {
-//   padding: '2rem',
-//   fontSize: '14px',
-//   textAlign: 'left',
-//   padding: '40px 50px',
-//   marginLeft: '0'
-// };
-//
-// if ($(window).width() < 800) {
-//   $("[data-template-id='#city_description']").css(toolTipStyles);
-// }
 
 $('#city_block').fadeOut();
 $('#city_block').fadeIn(10000);
@@ -54,11 +40,15 @@ setInterval(function() {
   $(".m-phone").removeClass("animated pulse");
 }, 16000);
 
-const contact_form    = $('#contact_form3');
-const success_message = $('#success-message');
-const error_name      = $('#error-name');
-const error_email     = $('#error-email');
-const form_group      = $('.form-group');
+
+/******************************************************************************
+| Ajax Contact Form
+ *****************************************************************************/
+const contact_form    = $('#contact_form3'),
+      success_message = $('#success-message'),
+      error_name      = $('#error-name'),
+      error_email     = $('#error-email'),
+      form_group      = $('.form-group');
 success_message.hide();
 
 contact_form.on("submit",function(event){
@@ -71,9 +61,7 @@ contact_form.on("submit",function(event){
     data : contact_form.serialize(),
     success: function() {
       console.log('ok');
-      // console.log(contact_form.serialize());
       $('#button_submit').css('background-color', '#F7D802');
-
       success_message.show('slow');
     },
     error: function(e) {
@@ -108,8 +96,9 @@ contact_form.on("submit",function(event){
   event.preventDefault();
 });
 
-
-// taxsee-form
+/******************************************************************************
+| Taxsee Form
+ *****************************************************************************/
 (function (w, d, n, s) {
 s = d.createElement('script');s.type = 'text/javascript';s.async = 1;s.src = '//client.taxsee.com/js/embed.form.js';
 (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
@@ -120,8 +109,26 @@ taxsee('country', 'ru');
 taxsee('base', 532);
 taxsee('autoresize', true);
 taxsee('theme', 'maxim');
+taxsee('payment', 1);
 taxsee('language', 'ru');
+taxsee('debug', false);
 })(window, document, 'taxsee');
+
+// // TaxSee Order Form
+// (function (w, d, n, s) {
+//     s = d.createElement('script');s.type = 'text/javascript';s.async = 1;s.src = '//client.taxsee.com/js/embed.form.js';
+//     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+//     w[n]=w[n]||function(p,v){(w[n].p=w[n].p||{})[p]=v};
+//     taxsee('id', 'TEa7vbpfivbk+FiaQAGCEeNalskB+zPaJqoQ9E91iP1CrKTrERnxy3fqUPFDxnqG');
+//     taxsee('autoresize', true);
+//     taxsee('container', 'frame-order');
+//     taxsee('theme', 'maxim');
+//     taxsee('payment', 1);
+//     taxsee('country', 'ru');
+//     taxsee('base', 6);
+//     taxsee('language', 'ru');
+//     taxsee('debug', false);
+// })(window, document, 'taxsee');
 
 // Vue.component('example', require('./components/Modal.vue'));
 //

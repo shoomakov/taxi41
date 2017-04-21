@@ -10,39 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\Http\Controllers\ContactUSController;
-use Illuminate\Http\Request;
-Route::get('test', function() {
-  DB::connection()->enableQueryLog();
-  $contactus = DB::select('select migration from migrations');
-  dd($contactus);
-  // foreach ($contactus as $key => $value) {
-  //   echo $value;
-  // }
-
-});
-
-Route::get('/ska79sfaas12jkadskasd3x24c2f43f2', function() {
-  return view(
-    'temp.readme',
-    [
-      'title' => 'Публичная оферта | '.config('app.name'),
-      'description' => 'null',
-
-      // menu
-      'morder' => 'm-order',
-      'mdriver' => 'm-driver',
-      'offerta' => 's-active',
-      'contacts' => '',
-      'about' => '',
-
-      // style
-      'style' => 'all.css',
-
-      'doc' => file_get_contents('../resources/views/md/readme.md')
-    ]
-  );
-});
 
 Route::get('contact-us', 'ContactUSController@contactUS');
 Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost']);
@@ -80,9 +47,6 @@ Route::get('/', function () {
 
       // style
       'style' => 'all.css',
-
-      // city_description
-      'city' => file_get_contents('../resources/views/md/city.md')
     ]
   );
 });
@@ -112,9 +76,6 @@ Route::get('/driver', function () {
       // style
       'style' => 'driver.css',
 
-      // city_description
-      'city' => file_get_contents('../resources/views/md/city.md')
-
     ]
   );
 });
@@ -142,9 +103,6 @@ Route::get('/taksoparkam', function () {
 
       // style
       'style' => 'driver.css',
-
-      // city_description
-      'city' => file_get_contents('../resources/views/md/city.md')
 
     ]
   );
@@ -203,7 +161,7 @@ Route::get('/contacts', function () {
       'about' => '',
 
       // style
-      'style' => 'all.css'
+      'style' => 'contacts.css',
     ]
   );
 });

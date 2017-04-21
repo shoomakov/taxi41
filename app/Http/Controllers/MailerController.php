@@ -19,7 +19,7 @@ class MailerController extends BaseController {
     // $test->contactUSPost($message);
     Mail::send('pages._social', array('key' => 'value'), function($message)
     {
-        $message->to('sergey@shoomakov.ru')->subject('Заявка от водителя!');
+        $message->to('info@taxi41.su')->subject('Заявка от водителя!');
     });
 
     // return Redirect::to('users');
