@@ -11535,7 +11535,7 @@ process.umask = function() { return 0; };
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+asd;
 __webpack_require__(34);
 __webpack_require__(6);
 // require('tippy.js');
